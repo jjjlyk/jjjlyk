@@ -1,7 +1,7 @@
 ## Welcome 👋
 
 # 💫 About Me:
-🔭 I'm a 2nd year BS in Computer Science from Mapua University-Makati<br>
+🔭 I'm a 3rd year BS in Computer Science from Mapua University-Makati<br>
 🌱 I’m currently learning about Introduction to Cybersecurity & Data Science<br>
 ⚡ I love playing farming simulator games! 
 
