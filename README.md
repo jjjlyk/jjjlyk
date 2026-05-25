@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="https://github.com/jjjlyk/jjjlyk/blob/e15417c82e4eacca8cadd8ed32aa80a14987cc9a/bg.gif" alt="Hi, I'm Jelyka! I'm a Data Analyst 🚀 I ❤️ Happy Hardcore ❤️">
+   <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3500&pause=1&color=F7F7F7&width=435&lines=Hi%2C+I'm+Jelyka+%F0%9F%91%8B+;I'm+a+Graphic+Designer;Data+Analyst;+AI+and+Machine+Learning+Engineer" alt="Typing SVG" />
+   </a>
 </p>
 
 <p align="center">
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F7F7F7&width=435&lines=Hi%2C+I'm+Jelyka+%F0%9F%91%8B+I'm+a+Graphic+Designer%2C+Data+Analyst%2C+AI+and+Machine+Learning+Engineer" alt="Typing SVG" /></a>
-  </a>
+  <img src="https://github.com/jjjlyk/jjjlyk/blob/e15417c82e4eacca8cadd8ed32aa80a14987cc9a/bg.gif">
 </p>
 
 ### `// stack`
