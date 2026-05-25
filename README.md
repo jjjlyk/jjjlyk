@@ -1,10 +1,6 @@
 <div align="center">
 
-```
-✦ ˚ · 　　　　　✦ · ˚ ✦ ˚ · 　　　　　✦ · ˚
-```
-
-<img src="https://capsule-render.vercel.app/api?type=soft&color=gradient&customColorList=17,18,19&height=200&section=header&text=jelyka%20mae&fontSize=60&fontAlignY=55&desc=cs%20student%20·%20designer%20·%20fairy%20in%20disguise&descAlignY=75&fontColor=d8bbff&descColor=b39ddb&animation=fadeIn" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=17,18,19,20&height=220&section=header&text=jelyka%20mae%20✦&fontSize=52&fontAlignY=40&desc=cs%20student%20%7C%20designer%20%7C%20fairy%20in%20disguise&descAlignY=62&fontColor=e9d5ff&descColor=c4b5fd&animation=fadeIn&wave=true" />
 
 </div>
 
@@ -12,7 +8,14 @@
 
 <div align="center">
 
-*˚ ✦ a third-year CS student at mapua university-makati, weaving code and creativity together ✦ ˚*
+```ts
+const jelyka = {
+  school   : "Mapua University · Makati",
+  year     : "3rd year BS Computer Science",
+  traits   : ["curious", "creative", "probably farming rn 🌾"],
+  currently: ["Intro to Cybersecurity", "Data Science"],
+};
+```
 
 </div>
 
@@ -22,54 +25,62 @@
 
 <div align="center">
 
-### ˚₊· ͟͟͞͞➳ currently in my learning arc
+### `// spells i've mastered`
+
+<br/>
+
+**✦ frontend**
+
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev)
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org)
+[![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactnative.dev)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
+[![Electron](https://img.shields.io/badge/Electron-191970?style=for-the-badge&logo=Electron&logoColor=white)](https://electronjs.org)
+
+<br/>
+
+**✦ backend & data**
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://mysql.com)
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io)
+
+<br/>
+
+**✦ data science**
+
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org)
+[![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org)
+[![scikit--learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
+[![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)](https://plotly.com)
+[![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com)
+
+<br/>
+
+**✦ design & tools**
+
+[![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://figma.com)
+[![Illustrator](https://img.shields.io/badge/Illustrator-FF9A00?style=for-the-badge&logo=adobeillustrator&logoColor=white)](https://adobe.com/products/illustrator.html)
+[![Photoshop](https://img.shields.io/badge/Photoshop-31A8FF?style=for-the-badge&logo=adobephotoshop&logoColor=white)](https://adobe.com/products/photoshop.html)
+[![Git](https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com)
 
 </div>
-
-```
-🔐  introduction to cybersecurity
-📊  data science & machine learning
-🌾  farming simulator (very serious research)
-```
 
 <br/>
 
 ---
 
-### ✦ spells i've mastered
+### `// github grimoire`
 
 <div align="center">
 
-**frontend**
+<img height="165em" src="https://github-readme-stats.vercel.app/api?username=jjjlyk&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=0d0d1a&title_color=e9d5ff&text_color=c4b5fd&icon_color=a78bfa&include_all_commits=false&count_private=false"/>
+<img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jjjlyk&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0d0d1a&title_color=e9d5ff&text_color=c4b5fd"/>
 
-![React](https://img.shields.io/badge/React-%23764abc.svg?style=flat-square&logo=react&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-%23764abc?style=flat-square&logo=next.js&logoColor=white)
-![React Native](https://img.shields.io/badge/React%20Native-%23764abc?style=flat-square&logo=react&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-%23764abc?style=flat-square&logo=vite&logoColor=white)
+<br/>
 
-**backend & data**
-
-![Python](https://img.shields.io/badge/Python-%237b5ea7?style=flat-square&logo=python&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-%237b5ea7?style=flat-square&logo=node.js&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-%237b5ea7?style=flat-square&logo=mysql&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-%237b5ea7?style=flat-square&logo=streamlit&logoColor=white)
-
-**data science**
-
-![Pandas](https://img.shields.io/badge/Pandas-%239575cd?style=flat-square&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-%239575cd?style=flat-square&logo=numpy&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-%239575cd?style=flat-square&logo=scikit-learn&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-%239575cd?style=flat-square&logo=plotly&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-%239575cd?style=flat-square&logo=Matplotlib&logoColor=white)
-
-**design & tools**
-
-![Figma](https://img.shields.io/badge/Figma-%23b39ddb?style=flat-square&logo=figma&logoColor=white)
-![Adobe Illustrator](https://img.shields.io/badge/Illustrator-%23b39ddb?style=flat-square&logo=adobe-illustrator&logoColor=white)
-![Photoshop](https://img.shields.io/badge/Photoshop-%23b39ddb?style=flat-square&logo=adobe-photoshop&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power%20BI-%23b39ddb?style=flat-square&logo=powerbi&logoColor=white)
-![Git](https://img.shields.io/badge/Git-%23b39ddb?style=flat-square&logo=git&logoColor=white)
-![Electron](https://img.shields.io/badge/Electron-%23b39ddb?style=flat-square&logo=electron&logoColor=white)
+<img src="https://nirzak-streak-stats.vercel.app/?user=jjjlyk&theme=midnight-purple&hide_border=true&background=0d0d1a&ring=a78bfa&fire=e9d5ff&currStreakLabel=c4b5fd"/>
 
 </div>
 
@@ -77,24 +88,7 @@
 
 ---
 
-### ✦ github grimoire
-
-<div align="center">
-
-<img height="160em" src="https://github-readme-stats.vercel.app/api?username=jjjlyk&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=0d0d1a&title_color=d8bbff&text_color=b39ddb&icon_color=9575cd&include_all_commits=false&count_private=false"/>
-<img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jjjlyk&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0d0d1a&title_color=d8bbff&text_color=b39ddb"/>
-
-<br/>
-
-<img src="https://nirzak-streak-stats.vercel.app/?user=jjjlyk&theme=midnight-purple&hide_border=true&background=0d0d1a&ring=9575cd&fire=d8bbff&currStreakLabel=b39ddb"/>
-
-</div>
-
-<br/>
-
----
-
-### ✦ trophies from the enchanted forest
+### `// trophies from the enchanted forest`
 
 <div align="center">
 
@@ -106,15 +100,15 @@
 
 ---
 
-### ✦ find me in the fairy realm
+### `// find me in the fairy realm`
 
 <div align="center">
 
-[![Instagram](https://img.shields.io/badge/instagram-adra.creates-c084fc?style=flat-square&logo=instagram&logoColor=white)](https://instagram.com/adra.creates)
-[![LinkedIn](https://img.shields.io/badge/linkedin-jelyka%20mae%20dizon-9333ea?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/feed/)
-[![Medium](https://img.shields.io/badge/medium-adtrastea-7c3aed?style=flat-square&logo=medium&logoColor=white)](https://medium.com/@adtrastea)
-[![TikTok](https://img.shields.io/badge/tiktok-adra.creates-6d28d9?style=flat-square&logo=tiktok&logoColor=white)](https://tiktok.com/@adra.creates)
-[![Email](https://img.shields.io/badge/email-jelyka05mae@yahoo.com-5b21b6?style=flat-square&logo=yahoo&logoColor=white)](mailto:jelyka05mae@yahoo.com)
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://instagram.com/adra.creates)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jelyka-mae-dizon-1b2753327/)
+[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@adtrastea)
+[![TikTok](https://img.shields.io/badge/TikTok-%23000000.svg?style=for-the-badge&logo=TikTok&logoColor=white)](https://tiktok.com/@adra.creates)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jelyka05mae@yahoo.com)
 
 </div>
 
@@ -126,16 +120,12 @@
 
 *˚ ✦ if you'd like to support my creative spells ✦ ˚*
 
-[![Patreon](https://img.shields.io/badge/patreon-adra.creates-9333ea?style=flat-square&logo=patreon&logoColor=white)](https://patreon.com/adra.creates)
+[![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://patreon.com/adra.creates)
 
 <br/>
 
 [![](https://visitcount.itsvg.in/api?id=jjjlyk&label=fairy%20visitors&color=7&icon=6&pretty=true)](https://visitcount.itsvg.in)
 
-<br/>
-
-```
-✦ ˚ · 　　　　　✦ · ˚ ✦ ˚ · 　　　　　✦ · ˚
-```
-
 </div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=17,18,19,20&height=120&section=footer&animation=fadeIn" />
