@@ -1,31 +1,7 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:3b0764,50:6d28d9,100:3b0764&height=80&section=header" />
+<p align="center">
+  <img src="https://github.com/jjjlyk/jjjlyk/blob/e15417c82e4eacca8cadd8ed32aa80a14987cc9a/bg.gif" alt="Hi, I'm Jelyka! I'm a Data Analyst 🚀 I ❤️ Happy Hardcore ❤️">
+</p>
 
-<div align="center">
-
-<br/>
-
-<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=700&size=58&pause=99999&color=a855f7&center=true&vCenter=true&width=700&height=90&lines=jelyka+mae." alt="jelyka mae." />
-
-<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&style=italic&weight=400&size=20&pause=99999&color=c084fc&center=true&vCenter=true&width=700&height=40&lines=cs+student+%C2%B7+designer+%C2%B7+builder" alt="cs student · designer · builder" />
-
-</div>
-
-<br/>
-
-```ts
-interface Developer {
-  name     : "Jelyka Mae Dizon"
-  school   : "Mapua University, Makati"
-  degree   : "BS Computer Science, Year 3"
-  learning : ["Cybersecurity", "Data Science"]
-  building : ["web apps", "data pipelines", "cool stuff"]
-  offscreen: "farming sims 🌾 & design rabbit holes"
-}
-```
-
-<br/>
-
----
 
 ### `// stack`
 
