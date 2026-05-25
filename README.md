@@ -1,34 +1,35 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e0a3c,50:3b0764,100:581c87&height=60&section=header" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:3b0764,50:6d28d9,100:3b0764&height=80&section=header" />
 
 <div align="center">
+
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=700&size=58&pause=99999&color=a855f7&center=true&vCenter=true&width=650&height=90&lines=jelyka+mae." alt="jelyka mae." />
+<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=700&size=58&pause=99999&color=a855f7&center=true&vCenter=true&width=700&height=90&lines=jelyka+mae." alt="jelyka mae." />
 
-<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&style=italic&weight=400&size=20&pause=99999&color=c084fc&center=true&vCenter=true&width=650&height=40&lines=cs+student+%C2%B7+designer+%C2%B7+builder" alt="cs student · designer · builder" />
-
-<br/><br/>
-
-```ts
-const jelyka = {
-  school   : "Mapua University · Makati",
-  year     : "3rd year BS Computer Science",
-  focus    : ["Cybersecurity", "Data Science"],
-  hobbies  : ["UI/UX design", "farming sims 🌾", "building things"],
-};
-```
+<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&style=italic&weight=400&size=20&pause=99999&color=c084fc&center=true&vCenter=true&width=700&height=40&lines=cs+student+%C2%B7+designer+%C2%B7+builder" alt="cs student · designer · builder" />
 
 </div>
 
 <br/>
 
----
+```ts
+interface Developer {
+  name     : "Jelyka Mae Dizon"
+  school   : "Mapua University, Makati"
+  degree   : "BS Computer Science, Year 3"
+  learning : ["Cybersecurity", "Data Science"]
+  building : ["web apps", "data pipelines", "cool stuff"]
+  offscreen: "farming sims 🌾 & design rabbit holes"
+}
+```
 
-<div align="center">
+<br/>
+
+---
 
 ### `// stack`
 
-<br/>
+<div align="center">
 
 **frontend**
 
@@ -38,16 +39,12 @@ const jelyka = {
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
 [![Electron](https://img.shields.io/badge/Electron-191970?style=for-the-badge&logo=Electron&logoColor=white)](https://electronjs.org)
 
-<br/>
-
 **backend & databases**
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org)
 [![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://mysql.com)
 [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io)
-
-<br/>
 
 **data science & ml**
 
@@ -56,8 +53,6 @@ const jelyka = {
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
 [![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)](https://plotly.com)
 [![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com)
-
-<br/>
 
 **design & tooling**
 
@@ -76,12 +71,13 @@ const jelyka = {
 
 <div align="center">
 
-<img height="165em" src="https://github-readme-stats.vercel.app/api?username=jjjlyk&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=1a0533&title_color=d8b4fe&text_color=c4b5fd&icon_color=a855f7&include_all_commits=false&count_private=false"/>
-<img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jjjlyk&layout=compact&theme=midnight-purple&hide_border=true&bg_color=1a0533&title_color=d8b4fe&text_color=c4b5fd"/>
+<img height="160em" src="https://github-readme-stats.vercel.app/api?username=jjjlyk&show_icons=true&hide_border=true&bg_color=0d0020&title_color=a855f7&text_color=c4b5fd&icon_color=7c3aed&include_all_commits=false&count_private=false" />
+&nbsp;
+<img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jjjlyk&layout=compact&hide_border=true&bg_color=0d0020&title_color=a855f7&text_color=c4b5fd" />
 
-<br/>
+<br/><br/>
 
-<img src="https://nirzak-streak-stats.vercel.app/?user=jjjlyk&theme=midnight-purple&hide_border=true&background=1a0533&ring=a855f7&fire=d8b4fe&currStreakLabel=c4b5fd"/>
+<img src="https://nirzak-streak-stats.vercel.app/?user=jjjlyk&hide_border=true&background=0d0020&ring=7c3aed&fire=a855f7&currStreakLabel=c084fc&sideLabels=c4b5fd&dates=6d28d9" />
 
 </div>
 
@@ -93,7 +89,7 @@ const jelyka = {
 
 <div align="center">
 
-![](https://github-profile-trophy.vercel.app/?username=jjjlyk&theme=onestar&no-frame=true&no-bg=true&margin-w=6&column=7)
+![](https://github-profile-trophy.vercel.app/?username=jjjlyk&theme=onestar&no-frame=true&no-bg=true&margin-w=4&column=7)
 
 </div>
 
@@ -118,4 +114,6 @@ const jelyka = {
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:581c87,50:3b0764,100:1e0a3c&height=100&section=footer" />
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:3b0764,50:6d28d9,100:3b0764&height=100&section=footer" />
