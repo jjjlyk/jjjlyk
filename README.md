@@ -1,12 +1,15 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=17,18,19,20&height=220&section=header&text=jelyka%20mae%20✦&fontSize=52&fontAlignY=40&desc=cs%20student%20%7C%20designer%20%7C%20fairy%20in%20disguise&descAlignY=62&fontColor=e9d5ff&descColor=c4b5fd&animation=fadeIn&wave=true" />
-
-</div>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=17,18,19,20&height=60&section=header&animation=fadeIn&wave=true" />
 
 <br/>
 
-<div align="center">
+<!-- Custom SVG header with serif + italic font pairing -->
+<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=700&size=52&pause=99999&color=6D28D9&center=true&vCenter=true&width=600&height=80&lines=jelyka+mae." alt="jelyka mae." />
+
+<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&style=italic&weight=400&size=20&pause=99999&color=8B5CF6&center=true&vCenter=true&width=600&height=40&lines=cs+student+%C2%B7+designer+%C2%B7+fairy+in+disguise" alt="cs student · designer · fairy in disguise" />
+
+<br/><br/>
 
 ```ts
 const jelyka = {
@@ -128,4 +131,4 @@ const jelyka = {
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=17,18,19,20&height=120&section=footer&animation=fadeIn" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=17,18,19,20&height=100&section=footer&animation=fadeIn" />****
