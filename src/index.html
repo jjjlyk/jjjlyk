@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jelyka</title>
+
+  <!-- Fira Code + Instrument Serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Instrument+Serif:ital@0;1&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    /* ── Reset ─────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #0d0020;   /* page bg outside the canvas */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ── Fixed canvas — exact bg.gif dimensions ─────────── */
+    .canvas {
+      position: relative;
+      width:  900px;
+      height: 320px;
+      overflow: hidden;
+      flex-shrink: 0;
+
+      background: url('../assets/bg.gif') center center / cover no-repeat;
+    }
+
+    /* ── Dark overlay for legibility ───────────────────── */
+    .canvas::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(13, 0, 32, 0.42);
+      pointer-events: none;
+    }
+
+    /* ── Centered text ──────────────────────────────────── */
+    .hero {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+    }
+
+    /* ── Typing text ────────────────────────────────────── */
+    #header {
+      font-family: 'Fira Code', 'Courier New', monospace;
+      font-size: 2rem;          /* fixed size → consistent capture */
+      font-weight: 600;
+      color: #f7f7f7;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+
+      text-shadow:
+        0 0 8px  rgba(168, 85, 247, 0.75),
+        0 0 22px rgba(168, 85, 247, 0.35);
+    }
+
+    /* ── Blinking cursor ────────────────────────────────── */
+    .cursor {
+      display: inline-block;
+      width: 3px;
+      height: 1em;
+      background: #c084fc;
+      margin-left: 4px;
+      vertical-align: text-bottom;
+      border-radius: 1px;
+      animation: blink 1s step-start infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0; }
+    }
+
+    /* ── Instrument Serif emphasis words ────────────────── */
+    .serif {
+      display: inline-block;          /* required for transform to work inline */
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 1.1em;
+      letter-spacing: 0.01em;
+
+      /* plays once when the span first enters the DOM */
+      animation: serifReveal 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    @keyframes serifReveal {
+      0%   { opacity: 0; transform: translateY(6px) scale(0.94); }
+      60%  { opacity: 1; }
+      100% { opacity: 1; transform: translateY(0)   scale(1);    }
+    }
+
+    /* ── Line enter (intro) ─────────────────────────────── */
+    #header.line-in {
+      animation: lineIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    @keyframes lineIn {
+      0%   { opacity: 0; transform: translateY(18px); filter: blur(6px); }
+      60%  { opacity: 1; }
+      100% { opacity: 1; transform: translateY(0);    filter: blur(0px); }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Fixed 900×320 canvas — same size as bg.gif -->
+  <div class="canvas">
+    <div class="hero">
+      <h1 id="header">
+        <span id="typed-text"></span><span class="cursor"></span>
+      </h1>
+    </div>
+  </div>
+
+  <script>
+    // ── Lines & emphasis words ─────────────────────────────
+    const lines = [
+      "Hi, I'm Jelyka 👋",
+      "I'm a Graphic Designer.",
+      "Data Analyst.",
+      "AI & Machine Learning Engineer.",
+    ];
+    const serifWords = ['Jelyka', 'Designer', 'Analyst', 'Engineer'];
+
+    // ── Timing (ms) ────────────────────────────────────────
+    const TYPE_SPEED    = 65;
+    const DELETE_FIRST  = 240;   // hesitation before first backspace
+    const DELETE_SPEED  = 47;    // holding-backspace cadence
+    const PAUSE_AFTER   = 2200;  // how long a finished line is shown
+    const PAUSE_BEFORE  = 120;   // gap before next line starts typing
+    const FADE_IN_MS    = 550;   // must match lineIn CSS duration
+
+    // ── DOM refs ────────────────────────────────────────────
+    const el     = document.getElementById('typed-text');
+    const header = document.getElementById('header');
+
+    // ── Serif-state tracker ─────────────────────────────────
+    // Keeps the serif <span> stable in the DOM so the CSS
+    // animation fires ONCE on reveal, not on every keystroke.
+    let activeSerifWord = null;
+
+    function updateDisplay(plain) {
+      const foundWord = serifWords.find(w => plain.includes(w)) || null;
+
+      if (foundWord !== activeSerifWord) {
+        // ── Serif state changed → full rebuild (triggers animation) ──
+        activeSerifWord = foundWord;
+
+        if (!foundWord) {
+          // No keyword — plain text only
+          el.textContent = plain;
+        } else {
+          const idx    = plain.indexOf(foundWord);
+          const prefix = plain.slice(0, idx);
+          const suffix = plain.slice(idx + foundWord.length);
+          el.innerHTML =
+            escHtml(prefix) +
+            `<span class="serif">${foundWord}</span>` +
+            escHtml(suffix);
+        }
+      } else if (!foundWord) {
+        // ── Still no keyword — update plain text directly ──
+        el.textContent = plain;
+      } else {
+        // ── Same keyword still visible → patch text nodes only ──
+        // This avoids destroying the serif span, so the animation
+        // does NOT retrigger while suffix chars are typed/deleted.
+        const idx    = plain.indexOf(foundWord);
+        const prefix = plain.slice(0, idx);
+        const suffix = plain.slice(idx + foundWord.length);
+
+        const serifSpan = el.querySelector('.serif');
+
+        // prefix node (before the span)
+        const beforeNode = serifSpan.previousSibling;
+        if (prefix) {
+          if (beforeNode && beforeNode.nodeType === Node.TEXT_NODE) {
+            beforeNode.textContent = prefix;
+          } else {
+            el.insertBefore(document.createTextNode(prefix), serifSpan);
+          }
+        } else if (beforeNode && beforeNode.nodeType === Node.TEXT_NODE) {
+          el.removeChild(beforeNode);
+        }
+
+        // suffix node (after the span)
+        const afterNode = serifSpan.nextSibling;
+        if (suffix) {
+          if (afterNode && afterNode.nodeType === Node.TEXT_NODE) {
+            afterNode.textContent = suffix;
+          } else {
+            el.appendChild(document.createTextNode(suffix));
+          }
+        } else if (afterNode && afterNode.nodeType === Node.TEXT_NODE) {
+          el.removeChild(afterNode);
+        }
+      }
+    }
+
+    // Minimal HTML escaper (handles &, emoji pass through fine)
+    function escHtml(str) {
+      return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    // ── Typer state ─────────────────────────────────────────
+    let lineIndex   = 0;
+    let charIndex   = 0;
+    let isDeleting  = false;
+    let deleteCount = 0;    // tracks how many chars have been removed this pass
+
+    function tick() {
+      const current = lines[lineIndex];
+
+      if (!isDeleting) {
+        // ── Typing forward ──
+        charIndex++;
+        updateDisplay(current.slice(0, charIndex));
+
+        if (charIndex === current.length) {
+          // Full line shown → start backspacing after pause
+          isDeleting  = true;
+          deleteCount = 0;
+          setTimeout(tick, PAUSE_AFTER);
+        } else {
+          setTimeout(tick, TYPE_SPEED);
+        }
+
+      } else {
+        // ── Backspacing ──
+        charIndex--;
+        updateDisplay(current.slice(0, charIndex));
+        deleteCount++;
+
+        if (charIndex === 0) {
+          // All deleted → slide-in next line
+          isDeleting      = false;
+          deleteCount     = 0;
+          activeSerifWord = null;
+          lineIndex       = (lineIndex + 1) % lines.length;
+
+          header.classList.add('line-in');
+          setTimeout(() => header.classList.remove('line-in'), FADE_IN_MS);
+          setTimeout(tick, PAUSE_BEFORE);
+        } else {
+          // First backspace feels like a single tap; then accelerates into a hold
+          setTimeout(tick, deleteCount === 1 ? DELETE_FIRST : DELETE_SPEED);
+        }
+      }
+    }
+
+    // First line slides in on load
+    header.classList.add('line-in');
+    setTimeout(() => header.classList.remove('line-in'), FADE_IN_MS);
+    setTimeout(tick, 300);
+  </script>
+</body>
+</html>
